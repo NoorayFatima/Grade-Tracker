@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GradeMaster Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Grade<span>Master</span></h1>
+            <div id="stats-container"></div>
+        </header>
+
+        <section class="controls">
+            <div class="form-card">
+                <input type="text" id="student-name" placeholder="Name">
+                <input type="text" id="student-grades" placeholder="Grades (80, 90...)">
+                <button onclick="addStudent()" class="btn-primary">Add Student</button>
+            </div>
+
+            <div class="filter-sort-group">
+                <div class="filters">
+                    <button onclick="filterStudents('all')">All</button>
+                    <button onclick="filterStudents('passing')">Passing</button>
+                    <button onclick="filterStudents('failing')">Failing</button>
+                </div>
+                <div class="sort">
+                    <select id="sort-select" onchange="handleSort(this.value)">
+                    <option value="default">Sort by Grade</option>
+                    <option value="high-low">Highest First</option>
+                    <option value="low-high">Lowest First</option>
+                </select>
+                </div>
+            </div>
+        </section>
+
+        <main id="student-list"></main>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
