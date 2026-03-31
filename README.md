@@ -2,6 +2,8 @@
 
 A high-performance, in-browser student management system built with Vanilla JavaScript. This project focuses on heavy data manipulation and DOM synchronization.
 
+![App Screenshot](./screenshot.png)
+
 ## 🚀 Features
 - **Live Dashboard:** Real-time updates of class averages and top performers.
 - **Dynamic Filtering:** Toggle between All, Passing, and Failing students.
